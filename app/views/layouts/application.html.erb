@@ -11,6 +11,7 @@
 
   <body>
     <div class="container">
+      <%= render "shared/header" if user_signed_in? %>
       <%= yield %>  
     </div>
     

@@ -1,1 +1,15 @@
-_nonuser_landing.html.erb
+<div class="landing__container">
+	<div class="landing__content">
+		<h1 class="heading-primary mb-sm">TastyTour</h1>
+		<h2 class="subtitle-primary mb-lg">Keep track of the restaurants you love, and find your new favorites</h2>
+		<div class="landing__buttons">
+			<%= link_to new_user_session_path do %>
+				<div class="btn btn--primary">Log In</div>
+			<% end %>
+			<%= link_to new_user_registration_path do %>
+				<div class="btn btn--accent">Sign Up</div>
+			<% end %>
+			
+		</div>
+	</div>
+</div>

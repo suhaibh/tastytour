@@ -1,0 +1,26 @@
+.btn {
+	
+	border-radius: 4px;
+	padding: 1rem 3rem;
+	
+	
+	margin-right: 1rem;
+	cursor: pointer;
+	transition: all .3s;
+
+	&--primary {
+		background-color: $color-secondary;
+
+		&:hover {
+			background-color: darken($color-secondary, 5%);
+		}
+	}
+
+	&--accent {
+		background-color: $color-accent;
+
+		&:hover {
+			background-color: darken($color-accent, 10%);
+		}
+	}
+}

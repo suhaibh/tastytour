@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   	get 'signup', to: 'devise/registrations#new'
   end
 
+  resources :dining_experiences
+
   root 'static_pages#landing'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
