@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   	get 'signup', to: 'devise/registrations#new'
   end
 
-  resources :dining_experiences
+  resources :dining_experiences, except: [:new]
+  resources :create_restaurant_experiences, only: [:new, :create]
 
   root 'static_pages#landing'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

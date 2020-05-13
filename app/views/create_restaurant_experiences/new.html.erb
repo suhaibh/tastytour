@@ -1,0 +1,27 @@
+<%= form_with model: @create_restaurant_experience do |f| %>
+	<%= f.label :restaurant_name %>
+	<%= f.text_field :restaurant_name, required: true %>
+
+	<%= f.label :restaurant_address %>
+	<%= f.text_field :restaurant_address, required: true %>
+
+	<%= f.label :restaurant_cuisine %>
+	<%= f.text_field :restaurant_cuisine, required: true %>
+
+	<%= f.label :experience_rating %>
+	<%= f.number_field :experience_rating, required: true, type: "number", min: "1", max: "5" %>
+
+	<%= f.label :experience_review %>
+	<%= f.text_field :experience_review, required: true %>
+
+	<%= f.label :experience_price %>
+	<%= f.text_field :experience_price, required: true %>
+
+	<%= f.label :experience_date %>
+	<%= f.date_field :experience_date, required: true %>
+
+	<%= f.hidden_field :user, value: current_user.id %>
+
+	<%= f.submit "Save" %>
+
+<% end %>
